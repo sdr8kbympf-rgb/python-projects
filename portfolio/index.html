@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- This tells the browser "this is an html file" -->
+ 
+<html lang="en">
+<!-- html tag wraps the entire page. Everything lives inside of here -->
+
+<head>
+    <!-- head contains information about the page -->
+
+    <meta charset="UTF-8">
+    <!-- tells the browser what characters to use- handles letters and symbols correctly -->
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <!-- makes the page look correct on phones and tablets -->
+      <title>Jaden's Portfolio</title>
+      <!-- this shows up on the browser tab at the top -->
+       <style>
+        /* everything inside ofstyle tags is CSS  - this is where we make it look good */
+        body {
+            /* body styles affect the entire page */
+            font-family: Arial, sans-serif; /*sets the font for everything */
+            background-color: #1a1a2e; /* Dark navy background - hex code is just a color */
+            color: #ffffff; /*white text*/
+            margin: 0; /* removes default spacing around the edges*/
+            padding: 20px; /* adds breathing room inside the page */
+        }
+         .container {
+            /* a container that centers everything and limits the width */
+            max-width: 800px; /* never wider than 800px */
+            margin: 0 auto; /* centers the container on the page */
+        }
+        h1 {
+            /* styles the main heading */
+            color: #6c63ff; /* purple color */
+            font-size: 42px;
+        }
+        h2 {
+            /*styles section headings */
+            color: #00b894; /*  green color */
+            border-bottom: 2px solid #00b894; /* adds a line under each section heading */
+            padding-bottom: 8px; /* adds space below each section heading */
+        }
+        p {
+            /*styles paragraph text */
+            line-height: 1.8; /* adds space between lines of text, makes it easier to read */
+            color: #cccccc; /* light gray text instead of pure white. Its easier on the eyes */
+        }
+        .skills-list {
+            /* styles the skills section */
+            display: flex; /* flex puts items side by side instead of stacked */
+            flex-wrap: wrap; /* wraps to the next line if the screen is too small */
+            gap: 10px; /* space between each skill tag */
+            padding: 0;
+            list-style: none; /* removes bullet points */
+        }
+        .skills-list li {
+            /* styles each individual skill tag */
+            background-color: #6C63FF; /* purple background */
+            color: white;
+            padding: 6px 16px; /* top/bottom padding, left/right padding */
+            border-radius: 20px; /* rounds the corners into a pill shape */
+            font-size: 14px;
+        }
+        .project-card {
+            /* styles each project box */
+            background-color: #16213e; /*slightly lighter than the page background */
+            border-left: 4px solid #6c63ff; /*purple line on the left side */
+            padding: 16px;
+            margin-bottom: 16px; /* space between cards */
+            border-radius: 8px; /*slightly rounder corners */
+        }
+        .project-card h3 {
+            /* styles the project title inside each card */
+            color: #6C63FF;
+            margin: 0 0 8px 0;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- body contains everything the user actually sees on the page -->
+         <div class="container">
+         <!-- div is a box -class="container" applies the container CSS styles above-->
+
+         <!-- HEADER SECTION-->
+          <h1>Jaden Washington</h1>
+          <!-- h1 is the biggest heading -only one use per page-->
+
+          <p>Active duty service member transitioning into software engineering
+            Currently building Python projects daily and preparing for NYU's CS program.</p>
+            <!-- SKILLS SECTION -->
+             <h2>Skills</h2>
+             <ul class="skills-list">
+                <!-- ul is an unordered list - class applies our skills-list styles -->
+                <li>Python</li>
+                <!-- each li is one item in the list - here each is a skill tag -->
+                 <li> Git & Github </li>
+                 <li> HTML & CSS </li>
+                 <li> Problem Solving </li>
+                 <li> Debugging </li>
+             </ul>
+
+             <!-- PROJECTS SECTION -->
+              <h2>Projects</h2>
+
+              <div class="project-card">
+              <!--each peoject gets its own card div -->
+              <h3> Contact Book</h3>
+              <p> A command-line contact manager built in Python. Uses dictionaries,
+                functions, and loops to add, search, and delete contacts.
+              </p>
+              </div>
+
+              <div class="project-card">
+                <h3> Word Frequency Counter</h3>
+                <p>Analyzes any sentence and counts how many times each word appears.
+                    Built with Python dictionaires and string methods.</p>
+              </div>
+
+              <div class="project-card">
+                <h3>Tip Calculator</h3>
+                <p> Calculates tip amount and splits the bill between any number of people.
+                    Built with Python variables and user input.
+                </p>
+              </div>
+
+              <!-- ABOUT SECTION-->
+               <h2>About Me</h2>
+               <p>2A651F Jet Engine Mechanic with a passion for building things -
+                now applying that same precision to software. Based in Goldsboro, NC.
+               </p>
+
+            </div>
+
+    </body>
+</html>
